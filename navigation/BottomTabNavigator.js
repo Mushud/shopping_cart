@@ -17,7 +17,10 @@ export default function BottomTabNavigator({ navigation, route }) {
 	navigation.setOptions({ headerMode: 'none' });
 
 	return (
-		<BottomTab.Navigator initialRouteName={INITIAL_ROUTE_NAME}>
+		<BottomTab.Navigator
+			tabBarOptions={{ showLabel: false }}
+			initialRouteName={INITIAL_ROUTE_NAME}
+		>
 			<BottomTab.Screen
 				name='Home'
 				component={HomeScreen}
@@ -35,7 +38,7 @@ export default function BottomTabNavigator({ navigation, route }) {
 					headerTitl: null,
 					title: 'Music',
 					tabBarIcon: ({ focused }) => (
-						<TabBarIcon focused={focused} name='md-musical-note' />
+						<TabBarIcon focused={focused} name='search1' type='ant' />
 					)
 				}}
 			/>
@@ -45,7 +48,7 @@ export default function BottomTabNavigator({ navigation, route }) {
 				options={{
 					title: 'Contribute',
 					tabBarIcon: ({ focused }) => (
-						<TabBarIcon focused={focused} name='google-assistant' type='mat' />
+						<TabBarIcon focused={focused} name='plussquareo' type='ant' />
 					)
 				}}
 			/>
@@ -55,7 +58,7 @@ export default function BottomTabNavigator({ navigation, route }) {
 				options={{
 					title: 'Identify',
 					tabBarIcon: ({ focused }) => (
-						<TabBarIcon focused={focused} name='dot-circle-o' type='awe1' />
+						<TabBarIcon focused={focused} name='hearto' type='ant' />
 					)
 				}}
 			/>
@@ -65,7 +68,7 @@ export default function BottomTabNavigator({ navigation, route }) {
 				options={{
 					title: 'Search',
 					tabBarIcon: ({ focused }) => (
-						<TabBarIcon focused={focused} name='search1' type='ant' />
+						<TabBarIcon focused={focused} name='user' type='ant' />
 					)
 				}}
 			/>
