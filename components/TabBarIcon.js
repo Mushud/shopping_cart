@@ -23,7 +23,7 @@ export default function TabBarIcon(props) {
 		return (
 			<Foundation
 				name={props.name}
-				size={30}
+				size={22}
 				style={{ marginBottom: -3 }}
 				color={props.focused ? Colors.tabIconSelected : Colors.tabIconDefault}
 			/>
@@ -32,7 +32,7 @@ export default function TabBarIcon(props) {
 		return (
 			<FontAwesome
 				name={props.name}
-				size={30}
+				size={22}
 				style={{ marginBottom: -3 }}
 				color={props.focused ? Colors.tabIconSelected : Colors.tabIconDefault}
 			/>
@@ -41,26 +41,25 @@ export default function TabBarIcon(props) {
 		return (
 			<AntDesign
 				name={props.name}
-				size={30}
+				size={22}
 				style={{ marginBottom: -3 }}
 				color={props.focused ? Colors.tabIconSelected : Colors.tabIconDefault}
 			/>
 		);
-  } else if (props.type === 'mat'){
-    	return (
-				<MaterialCommunityIcons
-					name={props.name}
-					size={30}
-					style={{ marginBottom: -3 }}
-					color={props.focused ? Colors.tabIconSelected : Colors.tabIconDefault}
-				/>
-			);
-  }
-  else
+	} else if (props.type === 'mat') {
+		return (
+			<MaterialCommunityIcons
+				name={props.name}
+				size={22}
+				style={{ marginBottom: -3 }}
+				color={props.focused ? Colors.tabIconSelected : Colors.tabIconDefault}
+			/>
+		);
+	} else
 		return (
 			<Ionicons
 				name={props.name}
-				size={30}
+				size={22}
 				style={{ marginBottom: -3 }}
 				color={props.focused ? Colors.tabIconSelected : Colors.tabIconDefault}
 			/>
