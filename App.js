@@ -35,7 +35,8 @@ export default function App(props) {
 				await Font.loadAsync({
 					...Ionicons.font,
 					'space-mono': require('./assets/fonts/SpaceMono-Regular.ttf'),
-					'fira-black': require('./assets/fonts/FiraSans-Black.ttf')
+					'fira-black': require('./assets/fonts/FiraSans-Black.ttf'),
+					'ig-font': require('./assets/fonts/Rochester-Regular.ttf')
 				});
 			} catch (e) {
 				// We might want to provide this error information to an error reporting service
