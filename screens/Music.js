@@ -680,7 +680,7 @@ export default function Music({ navigation }) {
 				</Text>
 			</View>
 			<ScrollView>
-				{/* <View style={{ paddingHorizontal: 10 }}>
+				<View style={{ paddingHorizontal: 10 }}>
 					<Text
 						style={{ fontSize: 18, color: '#f07e05', fontFamily: 'fira-black' }}
 					>
@@ -703,7 +703,7 @@ export default function Music({ navigation }) {
 						sliderWidth={Layout.window.width}
 						hasParallaxImages
 					/>
-				</View> */}
+				</View>
 
 				<FlatList
 					key={({ item }) => item.id}
